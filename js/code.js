@@ -85,7 +85,7 @@ btn.addEventListener("click", () => {
     do {
         nbAleatoire = genererNbAleatoire(citations.length);
     } while (nbAleatoire == dernier);
-
+    dernier = nbAleatoire;
     citation.textContent = citations[nbAleatoire][0];
     auteur.textContent = citations[nbAleatoire][1];
 });
